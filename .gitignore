@@ -1,0 +1,8 @@
+# Arquivos temporários e metadados do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.swp
+*~

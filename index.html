@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100d18">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main class="game-card">
+        <header class="game-header">
+            <p class="eyebrow">DESAFIO EM DUPLA</p>
+            <h1>Jogo da <span>Velha</span></h1>
+            <p class="subtitle">Uma partida, dois jogadores. Quem leva a melhor?</p>
+        </header>
+
+        <section class="players" aria-label="Jogadores">
+            <div class="player-field player-x">
+                <label for="player1"><span class="player-symbol" aria-hidden="true">X</span> Jogador 1</label>
+                <input type="text" id="player1" placeholder="Digite seu nome" maxlength="24" autocomplete="off">
+            </div>
+            <div class="player-field player-o">
+                <label for="player2"><span class="player-symbol" aria-hidden="true">O</span> Jogador 2</label>
+                <input type="text" id="player2" placeholder="Digite seu nome" maxlength="24" autocomplete="off">
+            </div>
+        </section>
+
+        <button id="start" class="start-button" type="button"><span id="startLabel">Começar partida</span> <span aria-hidden="true">↗</span></button>
+
+        <section class="match" aria-label="Partida">
+            <h2 id="gameStatus" class="turn-status" aria-live="polite" aria-atomic="true">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span id="turnPlayer">Pronto para jogar?</span>
+            </h2>
+            <div id="gameBoard" class="game-board" role="group" aria-label="Tabuleiro do jogo da velha">
+                <button type="button" class="board-cell" data-region="0.0" aria-label="Linha 1, coluna 1, vazia" disabled></button>
+                <button type="button" class="board-cell" data-region="0.1" aria-label="Linha 1, coluna 2, vazia" disabled></button>
+                <button type="button" class="board-cell" data-region="0.2" aria-label="Linha 1, coluna 3, vazia" disabled></button>
+                <button type="button" class="board-cell" data-region="1.0" aria-label="Linha 2, coluna 1, vazia" disabled></button>
+                <button type="button" class="board-cell" data-region="1.1" aria-label="Linha 2, coluna 2, vazia" disabled></button>
+                <button type="button" class="board-cell" data-region="1.2" aria-label="Linha 2, coluna 3, vazia" disabled></button>
+                <button type="button" class="board-cell" data-region="2.0" aria-label="Linha 3, coluna 1, vazia" disabled></button>
+                <button type="button" class="board-cell" data-region="2.1" aria-label="Linha 3, coluna 2, vazia" disabled></button>
+                <button type="button" class="board-cell" data-region="2.2" aria-label="Linha 3, coluna 3, vazia" disabled></button>
+            </div>
+            <p class="keyboard-hint">Dica: use Tab para navegar e Enter ou Espaço para marcar.</p>
+        </section>
+    </main>
+</body>
+</html>
