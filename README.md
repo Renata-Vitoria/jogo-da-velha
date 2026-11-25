@@ -28,6 +28,9 @@ Um jogo da velha para duas pessoas, feito com HTML, CSS e JavaScript. A interfac
 
 Não é necessário instalar dependências ou iniciar um servidor local.
 
+🔗 [Jogar online](https://renata-vitoria.github.io/jogo-da-velha/)
+
+🔗 [Ver código no GitHub](https://github.com/Renata-Vitoria/jogo-da-velha)
 
 ## Demonstração
 
